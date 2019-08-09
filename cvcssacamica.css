@@ -1,0 +1,130 @@
+body{
+    background-color: rgb(38, 207, 171);
+    font-style: inherit;
+    padding: 9px;
+}
+
+div{
+    margin: 3px;
+}
+
+h1{
+    font-style: oblique;
+}
+
+h2{
+    color: rgb(25, 145, 133);
+    font-style: italic;
+    font-size: x-large;
+    border-bottom: 2px solid  rgb(25, 145, 133);
+    background-color: transparent; 
+}
+
+h3{
+    color: rgb(39, 34, 116);
+}
+
+p{
+    font-size: larger;
+}
+
+li{
+    font-size: large;
+    border-bottom: 1px dashed black;
+}
+
+#columnaIzquierda{
+    width: 26%;
+    background-color: rgba(219, 241, 241, 0.747);
+    border-radius: 8px;
+    float: left top;
+    height: 160%;
+}
+
+#quienSoy{
+    float: right;
+    width: 70%;
+    padding: 1%;
+    background-color: rgba(219, 241, 241, 0.747);
+    height: 48%;
+    border-radius: 8px;
+} 
+
+#formacion{
+    float: right;
+    width: 70%;
+    padding: 1%; 
+    background-color: rgba(219, 241, 241, 0.747);
+    height: 48%;
+    border-radius: 8px;
+} 
+
+#experiencia{
+    float: right;
+    width: 70%;
+    padding: 1%;
+    background-color: rgba(219, 241, 241, 0.747);
+    height: 48%;
+    border-radius: 8px;
+    
+}
+
+#foto{
+    padding:40px;
+}
+
+#botones{
+    width: 600px;
+    height: 200px;
+    border: border-box;
+}
+
+a.boton1{
+    border-style: outset;
+    border-radius: 6px;
+    background-color: rgb(40, 103, 161);
+    width: 200px;
+    height: 10%;
+    margin-left: 20px;
+    padding: 2px, 2px;
+    display: block;
+    color: antiquewhite;
+}
+a.boton2 {
+    border-style: outset;
+    border-radius: 6px;
+    background-color: rgb(40, 103, 161);
+    width: 200px;
+    height: 10%;
+    margin-left: 20px;
+    display: block;
+    padding: 2px, 2px;
+    color: antiquewhite;
+}
+a.boton3 {
+    border-style: outset;
+    border-radius: 6px;
+    background-color: rgb(40, 103, 161);
+    width: 200px;
+    height: 10%;
+    margin-left: 20px;
+    display: block;
+    padding: 2px, 2px;
+    color: antiquewhite;
+}
+a.boton4 {
+    border-style: outset;
+    border-radius: 6px;
+    background-color: rgb(40, 103, 161);
+    width: 200px;
+    height: 10%;
+    margin-left: 20px;
+    padding: 2px, 2px;
+    display: block; 
+    color: antiquewhite;
+    
+}
+
+
+
+
