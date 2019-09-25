@@ -86,12 +86,12 @@ function intercambiarPosicionesGrilla(filaPos1, columnaPos1, filaPos2, columnaPo
 function actualizarPosicionVacia(nuevaFila, nuevaColumna) {
   filaVacia = nuevaFila;
   columnaVacia = nuevaColumna;
-  return filaVacia, columnaVacia;
 }
 
 
 // Para chequear si la posicón está dentro de la grilla.
 function posicionValida(fila, columna) {
+
   if (grilla.length > columna && columna >= 0) {
     for (var i = 0; i < grilla[i].length; i++) {
       return grilla[i].length > fila && fila >= 0 ? true : false
@@ -106,16 +106,18 @@ Las direcciones están dadas por números que representa: arriba (38), abajo (40
 function moverEnDireccion(direccion) {
   var nuevaFilaPiezaVacia;
   var nuevaColumnaPiezaVacia;
-
+  console.log('filaVacia.'+filaVacia)
+  console.log('ColVacia.'+columnaVacia)
   // Mueve pieza hacia la abajo, reemplazandola con la blanca
   if (direccion === codigosDireccion.ABAJO) {
-    nuevaFilaPiezaVacia = filaVacia - 1;
+    
+    nuevaFilaPiezaVacia = filaVacia + 1;
     nuevaColumnaPiezaVacia = columnaVacia;
   }
     
   // Mueve pieza hacia arriba, reemplazandola con la blanca
   else if (direccion === codigosDireccion.ARRIBA) {
-    nuevaFilaPiezaVacia = filaVacia + 1;
+    nuevaFilaPiezaVacia = filaVacia - 1;
     nuevaColumnaPiezaVacia = columnaVacia;
   }
     
