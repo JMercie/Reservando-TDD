@@ -66,23 +66,23 @@ li::before {
 
 .col-60 {
   background: #ff7c00;
-  box-sizing: content-box;
+}
+
+#juego{
   height: 600px;
   width: 600px;
 }
 
-.fichas div{
-  box-sizing: content-box;
-  width: 33.3%;
+.fichas{
+  width: 33.33%;
+  height: 33.33%;
+  float: left;
 }
 
 .fichas img{
-  float: left;
-  box-sizing: content-box;
-  width: 33.3%;
-  padding: 0.1px;
+  width:100%;
+  position:relative;
 }
-
 
 #flecha{
   font-size: 60px;
