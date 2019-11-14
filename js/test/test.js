@@ -9,7 +9,7 @@ describe('ReservarHorario', function () {
         var restaurant = new Restaurant(24, "Maison Kayser", "Desayuno", "Nueva York", ["21:00", "22:30", "15:00"], "../img/desayuno2.jpg", [9, 5, 7, 6, 7]);
         var HorarioAnterior = restaurant.horarios.length;
         restaurant.reservarHorario("21:00");
-        expect(restaurant.horarios.length).to.equal(HorarioAnterior -1);
+        expect(restaurant.horarios.length).to.equal(HorarioAnterior - 1);
     });
     it('Conservar mi horario intacto, si el horario reservado no coincide', () => {
         var restaurant = new Restaurant(24, "Maison Kayser", "Desayuno", "Nueva York", ["21:00", "22:30", "15:00"], "../img/desayuno2.jpg", [9, 5, 7, 6, 7]);
@@ -32,8 +32,8 @@ describe('ObtenerPuntuacion', () => {
         var calificaciones = [9, 5, 7, 6, 7];
         var sumatoria = (acumulador, valorActual) => acumulador + valorActual;
         var restaurant = new Restaurant(24, "Maison Kayser", "Desayuno", "Nueva York", ["21:00", "22:30", "15:00"], "../img/desayuno2.jpg", calificaciones);
-        var puntuacionEsperada = calificaciones.reduce(sumatoria) / calificaciones.length;
-        expect(restaurant.obtenerPuntuacion()).to.equal(puntuacionEsperada);
+        var promedio = calificaciones.reduce(sumatoria) / calificaciones.length;
+        expect(restaurant.obtenerPuntuacion()).to.equal(promedio);
     });
     it('Dado un resturant sin califacion, que esta se mantenga en 0', () => {
         var calificaciones = [];
