@@ -18,7 +18,7 @@ Listado.prototype.calificarRestaurant = function(id, calificacion) {
 
 //Dado un id, busca el objeto del listado que tiene ese id
 Listado.prototype.buscarRestaurante = function(id) {
-    var restauranteEncontrado = this.restaurantes.find(restaurant => this.restaurantes.id === id);
+    var restauranteEncontrado = this.restaurantes.find(restaurant => restaurant.id === id);
     
     if(restauranteEncontrado == undefined){
          return "No se ha encontrado ningún restaurant";
@@ -62,9 +62,9 @@ Listado.prototype.obtenerHorarios = function() {
     var ListaDeHorarios = this.restaurantes.map(restaurant => restaurant.horarios);
 
     var horariosRepetidos = [];
-    listasDeHorarios.forEach(function(listaDeHorarios) {
-        listaDeHorarios.forEach(function(horario) {
-            horariosConRepetidos.push(horario)
+    ListaDeHorarios.forEach(function(ListaDeHorarios) {
+        ListaDeHorarios.forEach(function(horario) {
+            horariosRepetidos.push(horario)
         });
     });
 

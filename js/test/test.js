@@ -140,3 +140,21 @@ describe('Obtener Restaurantes', () => {
     });
 });     
 
+// Aqui testeo el objeto Reserva //
+
+describe('Precio Base Por Reserva', () => {
+    it('Si realizo una reserva valida, obtengo el precio base', () => {
+    var reserva1 = new reserva (new Date(2018, 7, 24, 11, 00), 8, 350, "DES1")
+        
+    expect(reserva1.precioBaseReserva()).to.equal(2800);
+    });
+});
+
+describe('Precio Total por Reserva', () => {
+    it('Si realizo una reserva valida, obtengo el precio final', () => {
+    var reserva1 = new reserva (new Date(2018, 7, 24, 11, 00), 8, 350, "DES1")
+        
+    expect(reserva1.precioReservaTotal()).to.equal(2450);        
+    });
+});
+
